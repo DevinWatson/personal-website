@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="bg" id="app">
     <router-view></router-view>
   </div>
 </template>
@@ -20,11 +20,19 @@ body {
   text-align: center;
 }
 .page code {
-  background-color: #f0f0f0;
-  padding: 3px 5px;
-  border-radius: 2px;
+  background-color: black;
 }
-#app {
-  padding-top: 100px;
+
+body, html {
+    height: 100%;
 }
+.bg { 
+    background-image: url("../../static/bg.jpg");
+
+    height: 100%; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
 </style>
